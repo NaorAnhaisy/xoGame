@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "597ecdd10b36b182ff5c44b32e72bffd",
+    "revision": "44b1449a4d249fa2143ddac1a94d840f",
     "url": "/xoGame/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/xoGame/static/css/2.de424728.chunk.css"
   },
   {
-    "revision": "0a218e21b9f11b1612f3",
+    "revision": "23bf1eca5f3c137cb8a7",
     "url": "/xoGame/static/css/main.2cb500ed.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/xoGame/static/js/2.86f4ed01.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0a218e21b9f11b1612f3",
-    "url": "/xoGame/static/js/main.c40a10ce.chunk.js"
+    "revision": "23bf1eca5f3c137cb8a7",
+    "url": "/xoGame/static/js/main.8b855206.chunk.js"
   },
   {
     "revision": "1edfe46737bffb21bbf7",

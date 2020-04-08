@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/xoGame/static/css/main.2cb500ed.chunk.css",
-    "main.js": "/xoGame/static/js/main.c40a10ce.chunk.js",
-    "main.js.map": "/xoGame/static/js/main.c40a10ce.chunk.js.map",
+    "main.js": "/xoGame/static/js/main.8b855206.chunk.js",
+    "main.js.map": "/xoGame/static/js/main.8b855206.chunk.js.map",
     "runtime-main.js": "/xoGame/static/js/runtime-main.35b11cd3.js",
     "runtime-main.js.map": "/xoGame/static/js/runtime-main.35b11cd3.js.map",
     "static/css/2.de424728.chunk.css": "/xoGame/static/css/2.de424728.chunk.css",
     "static/js/2.86f4ed01.chunk.js": "/xoGame/static/js/2.86f4ed01.chunk.js",
     "static/js/2.86f4ed01.chunk.js.map": "/xoGame/static/js/2.86f4ed01.chunk.js.map",
     "index.html": "/xoGame/index.html",
-    "precache-manifest.8a9f77278d9fae3ef88079fcbd55d8e7.js": "/xoGame/precache-manifest.8a9f77278d9fae3ef88079fcbd55d8e7.js",
+    "precache-manifest.e8bdbfdadaa5c2287c86d2f7ccc86d7f.js": "/xoGame/precache-manifest.e8bdbfdadaa5c2287c86d2f7ccc86d7f.js",
     "service-worker.js": "/xoGame/service-worker.js",
     "static/css/2.de424728.chunk.css.map": "/xoGame/static/css/2.de424728.chunk.css.map",
     "static/css/main.2cb500ed.chunk.css.map": "/xoGame/static/css/main.2cb500ed.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.de424728.chunk.css",
     "static/js/2.86f4ed01.chunk.js",
     "static/css/main.2cb500ed.chunk.css",
-    "static/js/main.c40a10ce.chunk.js"
+    "static/js/main.8b855206.chunk.js"
   ]
 }
