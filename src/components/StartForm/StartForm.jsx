@@ -6,9 +6,20 @@ const START_SCORE = 0;
 
 class StartForm extends Component {
 
-    state = {
-        error: null,
-        showText: false
+    constructor(props) {
+        super(props);
+        this.state = {
+            error: null,
+            showText: false,
+            firstPlayer: "",
+            secondPlayer: ""
+        }
+
+        this.handleChange = this.handleChange.bind(this);
+    }
+
+    handleChange(event) {
+        this.setState({ [event.target.name]: event.target.value });
     }
 
     componentDidMount() {
@@ -29,7 +40,7 @@ class StartForm extends Component {
             error: null
         })
 
-        let firstPlayer = this.refs.firstPlayer.value;
+        let firstPlayer = this.state.firstPlayer;
         let secondPlayer;
 
         if (this.props.isOnePlayer) {
@@ -49,7 +60,7 @@ class StartForm extends Component {
                     break;
             }
         } else {
-            secondPlayer = this.refs.secondPlayer.value;
+            secondPlayer = this.state.secondPlayer;
             if (secondPlayer.trim() === '') {
                 await this.setState({
                     error: 'PUT A NAME YOU SON OF A BITCH!'
@@ -87,11 +98,11 @@ class StartForm extends Component {
                 {this.state.showText && <Form className={'form-enter'}>
                     <Row>
                         <Col>
-                            <Form.Control placeholder={this.props.isOnePlayer === false ? "First player" : "Your name"} ref="firstPlayer" />
+                            <Form.Control onChange={this.handleChange} name="firstPlayer" placeholder={this.props.isOnePlayer === false ? "First player" : "Your name"} />
                         </Col>
                         {this.props.isOnePlayer === false ?
                             <Col>
-                                <Form.Control placeholder="Second player" ref="secondPlayer" />
+                                <Form.Control onChange={this.handleChange} name="secondPlayer" placeholder="Second player" />
                             </Col> : null}
                     </Row>
                     <Row>

@@ -2,25 +2,13 @@ import React, { Component } from "react";
 import './BoardSizeSelect.css'
 import { DropdownButton, Dropdown } from 'react-bootstrap';
 
-var values = [3, 5, 7, 9, 11]
+var values = [3, 5, 7, 9]
 var options = [];
 
 class BoardSizeSelect extends Component {
 
   componentDidMount() {
-    values.forEach(value => {
-
-      if (value % 2 === 0) {
-        throw new Error("Optional board Size is even - (" + value + "). (Optional_Board_Size % 2 = 0)");
-      }
-
-      options.push(
-        {
-          text: value + " X " + value,
-          value: value
-        })
-    });
-
+    this.createOptions();
     this.setState({ curBoardSize: options[0] })
   }
 
@@ -31,7 +19,22 @@ class BoardSizeSelect extends Component {
     }
   };
 
+  createOptions() {
+    options = []
+    values.forEach(value => {
+      if (value % 2 === 0) {
+        throw new Error("Optional board Size is even - (" + value + "). (Optional_Board_Size % 2 = 0)");
+      } else {
+        options.push({
+          text: value + " X " + value,
+          value: value
+        });
+      }
+    });
+  }
+
   createDropdown = () => {
+    this.createOptions();
     return options.map(function (option, i) {
       return (
         <Dropdown.Item key={i} eventKey={option.value}>
@@ -48,16 +51,15 @@ class BoardSizeSelect extends Component {
       curBoardSize: options.filter(option =>
         option.value === integerEventKey)[0]
     });
+
     this.props.setBoardSize(integerEventKey);
   }
 
   render() {
     return (
-      <>
-        <DropdownButton className="select-board-size-dropdown" variant="danger" onSelect={this.changeBoardSize} title={this.state.curBoardSize.text}>
-          {this.createDropdown()}
-        </DropdownButton>
-      </>
+      <DropdownButton className="select-board-size-dropdown" variant="danger" onSelect={this.changeBoardSize} title={this.state.curBoardSize.text}>
+        {this.createDropdown()}
+      </DropdownButton>
     )
   }
 }
