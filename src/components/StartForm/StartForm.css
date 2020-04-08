@@ -1,0 +1,37 @@
+form {
+    max-width: 40vw;
+    width: 40vw;
+    margin: auto;
+    margin-top: 5vh;
+}
+
+.play-button {
+    margin: auto;
+    margin-top: 5vh;
+    font-style: italic;
+    font-size: larger;
+    font-weight: 400;
+}
+
+.err {
+    text-align: center;
+    color:red;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.back-to-select-mode {
+    margin: auto;
+    margin-top: 2vh;
+}
+
+.form-enter {
+    white-space: nowrap;
+    animation: rightFromLeft 1.5s forwards;
+    visibility: visible; 
+    
+}
+
+@keyframes rightFromLeft {
+    0% { margin-right:1%; opacity: 0; }
+    100%  { margin-right:30%; opacity: 1; }
+}

@@ -1,0 +1,6 @@
+.box {
+    width: 98vw;
+    display: flex;
+    margin: auto;
+    margin-top: 5vh;
+}

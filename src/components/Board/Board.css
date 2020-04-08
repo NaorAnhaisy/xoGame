@@ -1,0 +1,39 @@
+td,
+th {
+    border: 3px solid black;
+}
+
+.squaresTable {
+    width: 40vw;
+    height: 55vh;
+    margin: auto;
+    background-color: aliceblue;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media only screen and (max-width: 800px) {
+    .squaresTable {
+        height: 45vh;
+        width: 45vw;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .squaresTable {
+        height: 42vh;
+        width: 50vw;
+    }
+}
+
+.wrapper {
+    margin: 0 auto;
+    display: flex;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.eighty-width {
+    width: 80%;
+}

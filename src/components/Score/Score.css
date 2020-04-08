@@ -1,0 +1,14 @@
+.scroe-board {
+    margin: 5px;
+    text-align: center;
+    margin-top: 20vh;
+}
+
+.score-name {
+    color: cadetblue;
+    font-weight: bold;
+}
+
+.score-points {
+    font-weight: bold;
+}

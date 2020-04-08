@@ -1,0 +1,15 @@
+.X {
+    animation: changeToXSign 0.5s forwards;
+}
+
+.O {
+    animation: changeToOSign 0.5s forwards;
+}
+
+@keyframes changeToXSign {
+    to {background-color: blue;}
+}
+
+@keyframes changeToOSign {
+    to {background-color: red;}
+}

@@ -1,0 +1,36 @@
+.mode-btn-div {
+  display: inline-flex;
+}
+
+.dropdown.show > .dropdown-menu {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);  
+    opacity:1;
+  }
+  
+  .dropdown-menu {
+    opacity:0;
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    -webkit-animation-fill-mode: forwards;  
+    animation-fill-mode: forwards; 
+    display: block; 
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+  }
+
+  .moving-left-mode {
+    white-space: normal;
+    animation: leftFromRight 2s forwards;
+    visibility: visible; 
+}
+
+@keyframes leftFromRight {
+    0%   { margin-right:35%; }
+    /* 99%  { margin-right:70%; opacity: 0 ;visibility: hidden; max-height: 0px; margin-top: 5vh;} */
+    100% { margin-right:70%; opacity: 0 ;visibility: hidden; max-height: 0px; margin-top: 0px;}
+}
+
+.star-icon {
+  width: 1.5vw;
+}
